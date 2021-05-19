@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\ArticuloController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/kom', [Controller::class, 'index']);
+Route::get('/articulos', [ArticuloController::class, 'obtenerArticulos']);  
