@@ -23,8 +23,8 @@ class ArticuloController extends Controller
         ->get(); */
         ->select('imagenes.url_imagen', 'imagenes.referencia_imagen', 'articulos.descripcion_articulo',
                 'articulos.referencia_articulo', 'articulos.unidad_palet_articulo', 'articulos.precio_articulo')
-        ->get();
+                ->get();        
 
-        return response()->json($datos);
+        return response()->json($datos->count());
     }
 }
