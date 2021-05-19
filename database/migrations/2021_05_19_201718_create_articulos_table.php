@@ -20,8 +20,7 @@ class CreateArticulosTable extends Migration
             $table->integer('prov_habitual_articulo');
             $table->string('referencia_articulo');
             $table->decimal('precio_articulo');
-            $table->string('familia_articulo'); 
-            $table->string('familia_articulo'); 
+            $table->string('familia_articulo');
             $table->string('unidad_palet_articulo');
             $table->timestamps();
         });
