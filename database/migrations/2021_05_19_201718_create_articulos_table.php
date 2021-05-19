@@ -22,7 +22,6 @@ class CreateArticulosTable extends Migration
             $table->decimal('precio_articulo');
             $table->string('familia_articulo'); 
             $table->string('familia_articulo'); 
-            $table->string('familia_articulo'); 
             $table->string('unidad_palet_articulo');
             $table->timestamps();
         });
