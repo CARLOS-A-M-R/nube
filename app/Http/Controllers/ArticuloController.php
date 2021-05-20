@@ -25,6 +25,6 @@ class ArticuloController extends Controller
                 'articulos.referencia_articulo', 'articulos.unidad_palet_articulo', 'articulos.precio_articulo')
                 ->get();        
 
-        return response()->json($datos->count());
+        return response()->json($datos);
     }
 }
