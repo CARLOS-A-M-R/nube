@@ -21,8 +21,7 @@ class ArticuloController extends Controller
                     'articulos.referencia_articulo','articulos.precio_articulo', 'articulos.familia_articulo', 'articulos.unidad_palet_articulo',
                 'imagenes.url_imagen', 'imagenes.referencia_imagen')
         ->get(); */
-        ->select('imagenes.url_imagen', 'imagenes.referencia_imagen', 'articulos.descripcion_articulo',
-                'articulos.referencia_articulo', 'articulos.unidad_palet_articulo', 'articulos.precio_articulo')
+        ->select('imagenes.url_imagen')
                 ->get();        
 
         return response()->json($datos);
