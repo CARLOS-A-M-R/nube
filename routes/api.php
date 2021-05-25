@@ -21,4 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/kom', [Controller::class, 'index']);
 Route::get('/articulos', [ArticuloController::class, 'obtenerArticulos']);  
-Route::get('/imagenes', [ArticuloController::class, 'urlImagen']);  
+Route::get('/imagenes', [ArticuloController::class, 'mostrarImagenes']);  
+Route::get('/com', [ArticuloController::class, 'comprobar']);  
